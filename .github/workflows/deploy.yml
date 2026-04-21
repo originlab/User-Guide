@@ -41,7 +41,7 @@ jobs:
       - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: '10.x'
-      - run: ls -l -R
+      #- run: ls -l -R
       - run: dotnet run --project converter/generator/generator.csproj -- src/out
       - name: Setup Pages
         uses: actions/configure-pages@v6
