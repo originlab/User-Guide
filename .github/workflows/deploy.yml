@@ -44,7 +44,7 @@ jobs:
       - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: '10.x'
-      - run: ls -l
+      - run: ls -l -R
       - run: dotnet run --project converter/generator/generator.csproj -- ${{ env.book_folder }}
       - name: Setup Pages
         uses: actions/configure-pages@v6
